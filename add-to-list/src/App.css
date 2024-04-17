@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+main{
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  gap: 16px;
+}
+aside{
+  width: 100%;
+}
+h2{
+  font-size: 2em;
+  line-height: 1.1;
+}
+form{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+input{
+  margin-top: 6px;
+}
+button{
+  margin-top: 16px;
+}
+ul{
+
+  margin: 20px;
+}
+li{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
