@@ -1,6 +1,7 @@
 import './App.css'
 import { Item } from './components/Item'
 import { useItems } from './hooks/useItems'
+import { useSeo } from './hooks/useSeo'
 
 export type ItemId=`${string}-${string}-${string}-${string}-${string}`
 export interface Item{
@@ -12,7 +13,10 @@ export interface Item{
 function App() {
 
   const{items, addItem, removeItem}=useItems()
-
+  useSeo({
+    title:"Prueba Tecnica",
+    description:"Lista de elementos"
+  })
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
