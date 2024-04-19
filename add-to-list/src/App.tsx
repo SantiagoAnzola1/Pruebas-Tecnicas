@@ -1,31 +1,19 @@
-import { useState } from 'react'
 import './App.css'
+import { Item } from './components/Item'
+import { useItems } from './hooks/useItems'
 
-interface Item{
-  id: `${string}-${string}-${string}-${string}-${string}`,
+export type ItemId=`${string}-${string}-${string}-${string}-${string}`
+export interface Item{
+  id: ItemId,
   text: string
 }
-const InitialItems: Item[] = [
-  {
-    id: crypto.randomUUID(),
-    text: "Elemento 1 ❌"
-  },
-  {
-    id: crypto.randomUUID(),
-    text: "Elemento 2 👤"
-  },
-  {
-    id: crypto.randomUUID(),
-    text: "Elemento 3 ▶️"
-  },{
-    id: crypto.randomUUID(),
-    text: "Elemento 4 🔗"
-  }
-]
+
 
 function App() {
-  
-  const[items, setItems] = useState(InitialItems)
+
+  const{items, addItem, removeItem}=useItems()
+
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
@@ -34,30 +22,18 @@ function App() {
     const isInput=input instanceof HTMLInputElement
     if(!isInput || isInput==null) return
 
-    const newItem:Item={
-      id: crypto.randomUUID(),
-      text: input.value
-    }
-
-    setItems((prevItems)=> {
-      return[...prevItems, newItem]
-    })
+    addItem(input.value)
 
     input.value=""
   }
-
-  const removeActaulItem = (id: string) => ()=> {
-      setItems((prevItems)=>{
-        return prevItems.filter(actualItem=>actualItem.id!==id)
-      })
-    }
+ 
     
   
   return (
       <main>
         <aside>
           <h1>Añade Elementos a la lista</h1>
-          <form onSubmit={handleSubmit}>
+          <form role="form" aria-label="Contact information" onSubmit={handleSubmit}>
             <label>
               Elemento a añadir
               <input type="text" name='elemento' required placeholder='Elemento 1 ⭐'/>
@@ -68,13 +44,24 @@ function App() {
 
         <section>
           <h2>Lista de elementos</h2>
-          <ul>
-        {
-          items.map(item=>{
-            return (<li key={item.id}>{item.text} <button onClick={removeActaulItem(item.id)}>❌</button></li>)
-          })
-        }
-          </ul>
+          {items.length==0?(
+            <p style={{color:'#9999'}}>Agrega Elementos a la lista</p>
+          ):(
+
+            <ul>
+              {
+                items.map((item)=>{
+                  return (
+                    <Item  
+                      {...item} 
+                      handleClick={removeItem(item.id)} 
+                      key={item.id}
+                    />
+                  )
+                })
+              }
+            </ul>
+          )}
         </section>
       </main>
   )
