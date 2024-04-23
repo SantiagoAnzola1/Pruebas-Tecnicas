@@ -88,6 +88,19 @@ export enum Title {
     Mrs = "Mrs",
 }
 
+export enum SortBy{
+    NONE='none',
+    NAME='name',
+    LAST='last',
+    COUNTRY='country'
+}
+export enum FilterBy{
+   PAIS='pais',
+   NOMBRE='nombre',
+   APELLIDO='apellido'
+}
+
+
 export interface Picture {
     large:     string;
     medium:    string;

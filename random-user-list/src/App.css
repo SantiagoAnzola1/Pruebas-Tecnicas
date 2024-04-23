@@ -5,7 +5,12 @@
   text-align: center;
   width: 100%;
 }
-
+header{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,4 +45,18 @@
 
 .read-the-docs {
   color: #888;
+}
+.pointer{
+  cursor: crosshair;
+}
+.hoverRow:hover{
+  background-color: coral !important;
+}
+th{
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  
+}
+tr{
+  margin: 1rem;
 }
