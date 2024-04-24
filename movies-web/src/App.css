@@ -1,0 +1,30 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem;
+  text-align: center;
+}
+header{
+  margin: 2rem;
+}
+.movies{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 1rem;
+  cursor: pointer;
+}
+.poster{
+  position: relative;
+  
+}
+.poster>.img{
+  width: 100%;
+  aspect-ratio: 2/3;
+  transition: transform 0.2s ease-out;
+  
+}
+.poster>.img:hover{
+  transform: scale(1.1);
+}
