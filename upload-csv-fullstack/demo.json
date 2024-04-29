@@ -1,0 +1,107 @@
+[
+    {
+        "id": "1",
+        "Nombre": "Juan Pérez",
+        "Edad": "25",
+        "Departamento": "Marketing",
+        "Email": "juan.perez@example.com"
+    },
+    {
+        "id": "2",
+        "Nombre": "Ana Gómez",
+        "Edad": "30",
+        "Departamento": "Ventas",
+        "Email": "ana.gomez@example.com"
+    },
+    {
+        "id": "3",
+        "Nombre": "Pedro Rodríguez",
+        "Edad": "35",
+        "Departamento": "Desarrollo",
+        "Email": "pedro.rodriguez@example.com"
+    },
+    {
+        "id": "4",
+        "Nombre": "Maria Fernández",
+        "Edad": "40",
+        "Departamento": "Recursos Humanos",
+        "Email": "maria.fernandez@example.com"
+    },
+    {
+        "id": "5",
+        "Nombre": "Luis Martínez",
+        "Edad": "45",
+        "Departamento": "Finanzas",
+        "Email": "luis.martinez@example.com"
+    },
+    {
+        "id": "6",
+        "Nombre": "Carlos López",
+        "Edad": "50",
+        "Departamento": "Producción",
+        "Email": "carlos.lopez@example.com"
+    },
+    {
+        "id": "7",
+        "Nombre": "Patricia Torres",
+        "Edad": "55",
+        "Departamento": "Investigación y Desarrollo",
+        "Email": "patricia.torres@example.com"
+    },
+    {
+        "id": "8",
+        "Nombre": "Ricardo Morales",
+        "Edad": "60",
+        "Departamento": "Atención al Cliente",
+        "Email": "ricardo.morales@example.com"
+    },
+    {
+        "id": "9",
+        "Nombre": "Sofía Guzmán",
+        "Edad": "65",
+        "Departamento": "Logística",
+        "Email": "sofia.guzman@example.com"
+    },
+    {
+        "id": "10",
+        "Nombre": "Javier Castro",
+        "Edad": "70",
+        "Departamento": "Legal",
+        "Email": "javier.castro@example.com"
+    },
+    {
+        "id": "11",
+        "Nombre": "Beatriz Ramírez",
+        "Edad": "75",
+        "Departamento": "Compras",
+        "Email": "beatriz.ramirez@example.com"
+    },
+    {
+        "id": "12",
+        "Nombre": "Gonzalo Ruiz",
+        "Edad": "80",
+        "Departamento": "IT",
+        "Email": "gonzalo.ruiz@example.com"
+    },
+    {
+        "id": "13",
+        "Nombre": "Carmen Paredes",
+        "Edad": "85",
+        "Departamento": "Administración",
+        "Email": "carmen.paredes@example.com"
+    },
+    {
+        "id": "14",
+        "Nombre": "Ernesto Vargas",
+        "Edad": "90",
+        "Departamento": "RRHH",
+        "Email": "ernesto.vargas@example.com"
+    },
+    {
+        "id": "15",
+        "Nombre": "Isabel Méndez",
+        "Edad": "95",
+        "Departamento": "Finanzas",
+        "Email": "isabel.mendez@example.com"
+    }
+]
